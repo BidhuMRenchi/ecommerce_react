@@ -1,0 +1,20 @@
+body{
+    background-color: #dbe0e5;
+}
+
+.form01{
+    background-color: #aabdb7;
+    margin: 12em;
+    margin-right: 10em;
+    margin-top: 15em;
+    margin-bottom: 30%;
+    padding: 50px;
+    padding-right: 5em;
+    color: rgb(163, 42, 42);
+}
+
+.btn{
+    background-color: #56c7c2;
+}
+
+/* #B4CAC4 */
