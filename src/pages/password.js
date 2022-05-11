@@ -19,7 +19,8 @@ export default function ChangePass() {
 
       .matches(/[A-Z].*[A-Z]/, "must contain two uppercase characters")
       .matches(/[a-z].*[a-z]/, "must contain 2 lowercase characters")
-      .matches(/(?:[^`!@#$%^&*\-_=+'\/.,]*[`!@#$%^&*\-_=+'\/.,]){2}/,
+      .matches(
+        /(?:[^`!@#$%^&*\-_=+'\/.,]*[`!@#$%^&*\-_=+'\/.,]){2}/,
         "minimum 2 special characters"
       ),
 
@@ -145,7 +146,8 @@ export default function ChangePass() {
                   <span className="error" style={{ color: "red" }}>
                     {errors.newPassword}
                   </span>
-                </div><br/>
+                </div>
+                <br />
                 <div className="button-pass">
                   <button
                     type="submit"
@@ -153,7 +155,8 @@ export default function ChangePass() {
                     disabled={!isValid || isSubmitting}
                   >
                     Submit
-                  </button>&nbsp;&nbsp;
+                  </button>
+                  &nbsp;&nbsp;
                   <button type="reset" onClick={(e) => resetForm()}>
                     {" "}
                     Reset
