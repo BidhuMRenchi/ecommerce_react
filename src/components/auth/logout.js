@@ -3,8 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 const Logout = () => {
 
-    localStorage.removeItem("user");
-    localStorage.removeItem("id");
+    localStorage.clear();
     const nav =useNavigate();
     return (
         nav("/")

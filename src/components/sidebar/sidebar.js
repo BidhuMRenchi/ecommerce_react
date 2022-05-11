@@ -1,7 +1,7 @@
 import React from "react";
 import { Tabs } from "antd";
 import "../../assets/home.css";
-import ChangePassword from "../../pages/change_pass";
+import ChangePassword from "../../pages/changePassword";
 
 const { TabPane } = Tabs;
 

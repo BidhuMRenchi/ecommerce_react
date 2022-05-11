@@ -11,9 +11,11 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormLabel from "@mui/material/FormLabel";
 import { Button } from "@mui/material";
-import { Alert } from "antd";
+// import { Alert } from "antd";
 import { useNavigate } from "react-router-dom";
-import ChangePassword from "./change_pass";
+import Alert from "@mui/material/Alert";
+import { AlertTitle } from "@mui/material";
+
 
 const Manage = () => {
   const nav = useNavigate();
@@ -56,10 +58,13 @@ const Manage = () => {
     console.log(data2);
     axios.put(API_URL01, data2, config).then((response) => {
       console.log(response);
-      <Alert message="Success Tips" type="success" showIcon />
+      <Alert severity="success">
+        <AlertTitle>Success</AlertTitle>
+        This is a success alert — <strong>check it out!</strong>
+      </Alert>;
+
       nav("/profile");
     });
-    
   };
 
   useEffect(() => getData(), []);

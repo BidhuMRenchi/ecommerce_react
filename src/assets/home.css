@@ -141,3 +141,22 @@
     margin-left: 8em;
     color: rgb(0, 0, 0);
 }
+
+.pagenotfound{
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 4%;
+    justify-items: center;
+    padding: 23em;
+    padding-top: 20em;
+    padding-left: 35em;
+    color: blue;
+}
+
+.changepass_modal{
+    margin-left: 9em;
+}
+
+.button-pass{
+margin-left: 7em;
+}
